@@ -1,0 +1,93 @@
+body{
+    background: url(../css/stars1.png);
+    background-color: rgb(1, 1, 50);
+    overflow-x: hidden;
+}
+
+
+/* START HEAD CSS */
+.head{
+    margin-right: 380px;
+    text-align: center;
+    color: lightgray;
+}
+.head h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.head p{
+    font-size: 25px;
+    font-weight: 600;
+}
+/* END HEAD CSS */
+
+
+/* START INPUT CSS */
+.crud {
+    margin: 0px 180px;
+    width: 100%;
+}
+.input .price{
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+input{
+    margin: 12px 4px ;
+    padding: 8px ;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    width: 70%;
+    border-radius: 12px;
+
+}
+input:focus{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+.input small{
+    background-color: red;
+    width: 18%;
+    height: 30%;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 3px;
+}
+.input button{
+    margin: 5px 0px 0px 135px;
+    width: 50%;
+    border-radius: 12px;
+    font-weight: 600;
+}
+#total::before{
+    content: 'Total : ';
+}
+/* END INPUT CSS */
+
+
+
+
+/* START OUTPUTS CSS */
+table{
+    width: 75%;
+    color: white;
+    line-height: 2.5;
+    text-align: center;
+}
+table th{
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.outputs h1{
+    color: lightgray;
+    margin: 20px 340px;
+    font-size: 45px;
+    font-weight: 800;
+} 
+
+/* END OUTPUTS CSS */

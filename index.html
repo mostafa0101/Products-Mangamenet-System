@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+
+    <section class="crud">
+        <div class="container">
+
+            <div class="head mt-4">
+                <h1>CRUD</h1>
+                <p>Products Management System</p>
+            </div>
+
+
+            <div class="input">
+                <input type="text" id="title" placeholder="Title" class="title ">
+
+                <div class="price">
+                    <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+                    <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount">
+                    <small id="total"></small>
+                </div>
+
+                <input type="number" id="count" placeholder="Count">
+                <input type="text" id="category" placeholder="Category">
+
+                <button  class="btn btn-outline-success" id="submit" onclick="addProduct()">Add Product</button>
+            </div>
+            
+
+            <div class="outputs">
+                <div class="search">
+                    <input type="text" onkeyup="search(this.value)" name="search" id="search" placeholder="Search">
+                </div>
+                <h1>PRODUCTS</h1>
+                
+                <div id="deleteAll">
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Discount</th>
+                            <th>Category</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <button class="btn"></button>
+                    </tbody>
+                </table>
+                
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
